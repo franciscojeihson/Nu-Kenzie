@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Chivo:wght@300;900&family=Inter:wght@300;400;500;700&family=Montserrat:wght@400;700&family=Nunito:wght@400;600;700&family=Oxygen:wght@300;400;700&family=Poppins:wght@400;500;700&family=Press+Start+2P&display=swap");
+
+.header-acc {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 560px;
+}
+
+.header-acc button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+  width: 87px;
+  height: 40px;
+  background: #e9ecef;
+  border: 1.4px solid #e9ecef;
+  border-radius: 8px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #5b6166;
+}
+
+.header-acc button:hover {
+  background: #fd377e;
+  border: 1.4px solid #fd377e;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.top-div p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #212529;
+}

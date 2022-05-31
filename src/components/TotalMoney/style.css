@@ -1,0 +1,46 @@
+.total {
+  display: flex;
+  justify-content: space-around;
+  width: 383px;
+  height: 96px;
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  margin-top: 16px;
+}
+
+.total span {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fd377e;
+}
+
+.text-total {
+  margin-right: 100px;
+}
+
+.text-total p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #212529;
+}
+
+.text-total span {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #5b6166;
+}
+
+.total-acc {
+  display: flex;
+  width: 1435px;
+  justify-content: space-around;
+}
