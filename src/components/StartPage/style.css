@@ -1,0 +1,68 @@
+.corpo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1920px;
+  height: 937px;
+  background: #000000;
+}
+
+.center {
+  width: 988px;
+  height: 593px;
+  display: flex;
+}
+
+.infos {
+  width: 347px;
+  height: 274px;
+  display: flex;
+  flex-direction: column;
+}
+
+.infos h1 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+.infos span {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 20px;
+  gap: 10px;
+  width: 241px;
+  height: 48px;
+  background: #fd377e;
+  border: 2px solid #fd377e;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+button:hover {
+  background: #e34981;
+  border: 2px solid #e34981;
+  border-radius: 8px;
+}

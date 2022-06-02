@@ -1,9 +1,9 @@
 import "./style.css";
-function Header() {
+function Header({ initialPage, setInitialPage }) {
   return (
     <header>
       <h1>Nu Kenzie</h1>
-      <button>Inicio</button>
+      <button onClick={() => setInitialPage(!initialPage)}>Inicio</button>
     </header>
   );
 }

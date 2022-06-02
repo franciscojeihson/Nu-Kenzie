@@ -41,3 +41,20 @@ li:hover {
   background: #03b898;
   border-radius: 4px 0px 0px 4px;
 }
+
+.box-delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  margin-right: 20px;
+  background: #e9ecef;
+  border-radius: 2.46154px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.box-delete:hover {
+  background: #000000;
+  border-radius: 2.46154px;
+}

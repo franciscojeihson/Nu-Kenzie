@@ -2,16 +2,23 @@ import { useState } from "react";
 import "./style.css";
 
 function Form({ listTransactions, setListTransactions }) {
-  const [desc, setDesc] = useState("");
-  const [valor, setValor] = useState("");
-  const [isExpense, setExpense] = useState(false);
+  const [description, setDescription] = useState("");
+  const [value, setValue] = useState("");
+  const [type, setType] = useState("entrada");
 
-  function addtoList(newList) {
-    const newArrTransactions = [{ ...listTransactions, newList }];
-
-    setListTransactions(newArrTransactions);
+  function addtoList() {
+    const obj = {
+      description: description,
+      value: Number(value),
+      type: type,
+    };
+    if (obj.type === "saida") {
+      obj.value = obj.value * -1;
+      setListTransactions([...listTransactions, obj]);
+    } else {
+      setListTransactions([...listTransactions, obj]);
+    }
   }
-
   return (
     <>
       <form onSubmit={(event) => addtoList(event.preventDefault())}>
@@ -21,8 +28,8 @@ function Form({ listTransactions, setListTransactions }) {
             id="desc-input"
             type="text"
             placeholder="Digite aqui sua descrição"
-            value={desc}
-            onChange={(event) => setDesc(event.target.value)}
+            value={description}
+            onChange={(event) => setDescription(event.target.value)}
           />
           <span>Ex.:Compra de roupas</span>
         </div>
@@ -33,19 +40,19 @@ function Form({ listTransactions, setListTransactions }) {
               id="val-input"
               type="number"
               placeholder="1                       R$"
-              value={valor}
-              onChange={(event) => setValor(event.target.value)}
+              value={value}
+              onChange={(event) => setValue(event.target.value)}
             />
           </div>
           <div className="tipo-valor">
             <p>Tipo de valor</p>
-            <select name="select">
-              <option value="entrada" onChange={() => setExpense(!isExpense)}>
-                Entrada
-              </option>
-              <option value="saida" onChange={() => setExpense(!isExpense)}>
-                Saída
-              </option>
+            <select
+              name="select"
+              value={type}
+              onChange={(event) => setType(event.target.value)}
+            >
+              <option value="entrada">Entrada</option>
+              <option value="saida">Saída</option>
             </select>
           </div>
         </div>

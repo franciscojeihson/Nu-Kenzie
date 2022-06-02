@@ -8,7 +8,9 @@ function TotalMoney({ listTransactions }) {
           <p>Valor total:</p>
           <span>O valor se refere ao saldo</span>
         </div>
-        <span>$ {listTransactions.reduce((a, b) => a + b.value, 0)}</span>
+        <span>
+          $ {listTransactions.reduce((a, b) => Number(a) + Number(b.value), 0)}
+        </span>
       </div>
     </>
   );

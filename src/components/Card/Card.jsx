@@ -8,7 +8,9 @@ function Card({ description, type, value }) {
         <span>{type}</span>
       </div>
       <span>R$: {value}</span>
-      <button>Delete</button>
+      <div className="box-delete">
+        <img src="/assets/trash.svg" alt="deletar" />
+      </div>
     </li>
   );
 }
