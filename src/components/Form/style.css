@@ -1,136 +1,126 @@
-main {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap');
+
+form{
+    display: grid;
+    width: 250px;
+    padding: 10px;
+    height: 280px;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 2px solid #E9ECEF;
+    border-radius: 4px;
+    margin: 0 auto;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 380px;
-  height: 360px;
-  background: #ffffff;
-  border: 1px solid #e9ecef;
-  border-radius: 4px;
-  margin-top: 50px;
+label{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #212529;
 }
 
-form button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 13px 20px;
-  width: 314px;
-  height: 48px;
-  background: #fd377e;
-  border: 2px solid #fd377e;
-  border-radius: 8px;
-  color: #ffffff;
-  margin-left: 35px;
-  cursor: pointer;
+.lableDescription{
+    margin-top: 29px;
 }
 
-form button:hover {
-  background: #e34981;
-  color: #f8f9fa;
+.inputDescription{
+    background: #F8F9FA;
+    border: 2px solid #F8F9FA;
+    box-sizing: border-box;
+    width: 240px;
+    border-radius: 8px;
+    display: flex;
+    Height: 52.8px;
+    align-items: center;
+    margin-top: 12px;
+    padding: 0px 16px;
 }
 
-#desc-input {
-  width: 280px;
-  height: 52.8px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 16px;
-  background: #f8f9fa;
-  border: 2px solid #f8f9fa;
-  border-radius: 8px;
-  margin-right: 15px;
+.inputDescription:focus {
+    box-shadow: 0 0 0 0;
+    outline-color: #868e96;
+  }
+
+::placeholder{
+    width: 190px;
+    height: 26px;
+    left: 16px;
+    top: 13.4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #868E96;
 }
 
-#desc-input:focus {
-  background-color: #ffffff;
-}
-#desc-input:focus::placeholder {
-  color: transparent;
-}
-
-.desc-area {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.titleEx{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: -10px;
+    color: #868E96;
 }
 
-.desc-area p {
-  margin-right: 280px;
-}
-.desc-area span {
-  margin-right: 200px;
-}
-form span {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 20px;
-  color: #868e96;
+.inputsValueType{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#val-input {
-  width: 128px;
-  height: 48px;
-  padding: 0px 16px;
-  gap: 10px;
-  background: #f8f9fa;
-  border: 2px solid #f8f9fa;
-  border-radius: 8px;
+.valueInput, .typeInput{
+    align-items: center;
+    background: #F8F9FA;
+    border: 2px solid #F8F9FA;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 48px;
+    width: 128px;
+    border-radius: 8px;
+    padding-left: 10px;
+    color: #868E96;
 }
 
-#val-input::-webkit-outer-spin-button,
-#val-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.typeInput:focus {
+    box-shadow: 0 0 0 0;
+    outline-color: #868e96;
+  }
+
+  .valueInput:focus {
+    box-shadow: 0 0 0 0;
+    outline-color: #868e96;
+  }
+
+
+.buttonInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FD377E;
+    border: 2px solid #FD377E;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
-#val-input:focus {
-  background: #f8f9fa;
+.buttonInput:hover{
+    background: #dd2266;
 }
 
-.input-valores {
-  display: flex;
-  width: 314px;
-  height: 79px;
-  margin-left: 35px;
+@media (min-width:768px) {
+    
+    form{ 
+    padding: 30px;
+    height: 280px;
+    margin-left: 15%;
 }
 
-select * {
-  width: 128px;
-  height: 35px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 26px;
-  color: #5b6166;
-
-  background: #e9ecef;
-}
-
-form p {
-  font-size: 12px;
-}
-
-form select {
-  width: 150px;
-  height: 48px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 16px;
-  gap: 10px;
-  background: #f8f9fa;
-  border: 2px solid #f8f9fa;
-  border-radius: 8px;
 }

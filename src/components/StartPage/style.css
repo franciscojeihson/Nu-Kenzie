@@ -1,68 +1,87 @@
-.corpo {
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap");
+
+.homePageDiv {
+  background: rgba(33, 37, 41, 1);
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 1920px;
-  height: 937px;
-  background: #000000;
+  height: 100vh;
 }
 
-.center {
-  width: 988px;
-  height: 593px;
-  display: flex;
-}
-
-.infos {
-  width: 347px;
-  height: 274px;
-  display: flex;
-  flex-direction: column;
-}
-
-.infos h1 {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 38px;
-  line-height: 48px;
-  color: #ffffff;
-}
-
-.infos span {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: #ffffff;
-}
-
-button {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
+.div1Home {
+  display: grid;
   justify-content: center;
   align-items: center;
+}
+
+.inicio {
   padding: 13px 20px;
-  gap: 10px;
   width: 241px;
   height: 48px;
+  left: 256px;
+  top: 490px;
   background: #fd377e;
   border: 2px solid #fd377e;
+  box-sizing: border-box;
   border-radius: 8px;
-  cursor: pointer;
   font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 19px;
-
-  color: #ffffff;
+  letter-spacing: 0em;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
 }
 
-button:hover {
-  background: #e34981;
-  border: 2px solid #e34981;
-  border-radius: 8px;
+.inicio:hover {
+  background: #a71b4e;
+}
+
+.globalDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img1 {
+  margin-bottom: 30px;
+}
+
+.img2 {
+  margin-bottom: 28px;
+  width: 250px;
+}
+
+.img3 {
+  margin-bottom: 28px;
+}
+
+.img4 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .globalDiv {
+    justify-content: space-around;
+  }
+
+  .img4 {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    align-items: center;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .img4 {
+    display: flex;
+    width: 650px;
+    height: 650px;
+    align-items: center;
+  }
+
+  .div1Home {
+    align-content: center;
+  }
 }

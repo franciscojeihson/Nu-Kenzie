@@ -1,0 +1,39 @@
+.img5{
+    width: 280px;
+    height: 280px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    display: flex;
+}
+
+@media (min-width:768px) {
+    
+    .img5{ 
+        width: 340px;
+        height: 260px;
+        margin-left: 40px;
+}
+
+}
+
+
+
+@media (min-width:1024px) {
+    
+    .img5{ 
+        width: 410px;
+        height: 300px;
+        margin-left: 80px;
+}
+
+}
+
+@media (min-width:1440px) {
+    
+    .img5{ 
+        width: 410px;
+        height: 300px;
+        margin-left: 15px;
+}
+
+}

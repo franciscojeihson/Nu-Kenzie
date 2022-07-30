@@ -1,11 +1,17 @@
-import "./style.css";
-function Header({ initialPage, setInitialPage }) {
-  return (
-    <header>
-      <h1>Nu Kenzie</h1>
-      <button onClick={() => setInitialPage(!initialPage)}>Inicio</button>
-    </header>
-  );
-}
+import "./style.css"
+import nuKenzie from '../../imgs/NuKenzie.svg'
 
-export default Header;
+const Header = ({home}) =>{
+
+    return (
+        <>
+        <header>
+            <img src={nuKenzie} alt="logo" className="imgLogo"></img>
+            <button onClick={home} className="buttonHeader">Início</button>
+        </header>
+        </>
+    )
+
+} 
+
+export default Header

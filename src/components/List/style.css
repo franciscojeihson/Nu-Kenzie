@@ -1,47 +1,121 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Chivo:wght@300;900&family=Inter:wght@300;400;500;700&family=Montserrat:wght@400;700&family=Nunito:wght@400;600;700&family=Oxygen:wght@300;400;700&family=Poppins:wght@400;500;700&family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap');
 
-.header-acc {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 560px;
+.divList{
+    display: flex;
+    margin-top: 36px;
+    justify-content: space-around;
+    width: 300px;
 }
 
-.header-acc button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  gap: 10px;
-  width: 87px;
-  height: 40px;
-  background: #e9ecef;
-  border: 1.4px solid #e9ecef;
-  border-radius: 8px;
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-  text-align: center;
-  color: #5b6166;
+.titleList{
+    font-family: 'Nunito';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: -20px;
+    margin-top: 20px;
 }
 
-.header-acc button:hover {
-  background: #fd377e;
-  border: 1.4px solid #fd377e;
-  border-radius: 8px;
-  color: #ffffff;
-  cursor: pointer;
+.allButton{
+    height: 40px;
+    width: 69px;
+    border-radius: 8px;
+    background: #FD377E;
+    border: 1.4px solid #FD377E;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Nunito';
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 15px;
 }
 
-.top-div p {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  color: #212529;
+.allButton:hover{
+    background: #dd2266;
+}
+
+.outButton, .inButton{
+    height: 40px;
+    width: 69px;
+    border-radius: 8px;
+    background: #E9ECEF;
+    border: 1.4px solid #E9ECEF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Nunito';
+    color: #868E96;;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.outButton:hover{
+    background: #bec0c2;
+}
+
+.inButton:hover{
+    background: #bec0c2;
+}
+
+.divResumo{
+    display: grid;
+    justify-content: center;
+}
+
+
+@media (min-width:768px) {
+    
+    form{ 
+    padding: 30px;
+    height: 280px;
+    margin-left: 15%;
+}
+
+}
+
+@media (min-width:1024px) {
+    
+    .divResumo{ 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 30px;
+        width: 700px;
+}
+
+    .titleList{
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media (min-width:1440px) {
+    
+    .divResumo{ 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 700px;
+}
+
+    .titleList{
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
 }

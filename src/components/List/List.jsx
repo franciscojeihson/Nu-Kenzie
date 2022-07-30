@@ -1,29 +1,34 @@
-import Card from "../Card/Card";
-import "./style.css";
+import "./style.css"
 
-function List({ listTransactions }) {
+const List = ({ listTransactions, setFilterList }) => {
+
+  const filtrarTodos = () => {
+    setFilterList(listTransactions)
+  }
+
+
+  const filtrarDespesas = () =>{
+    const result = listTransactions.filter(({type}) => type === "Despesa")
+    setFilterList(result)
+  }
+
+  const filtrarEntradas = () =>{
+    const result = listTransactions.filter(({type}) => type === "Entrada")
+    setFilterList(result)
+  }
+
   return (
     <>
-      <div className="top-div">
-        <div className="header-acc">
-          <p>Resumo financeiro</p>
-          <button>Todos</button>
-          <button>Entradas</button>
-          <button>Despesas</button>
-        </div>
-        <ul>
-          {listTransactions.map(({ description, type, value }, index) => (
-            <Card
-              description={description}
-              type={type}
-              value={value}
-              key={index}
-            />
-          ))}
-        </ul>
+      <div className="divResumo">
+        <h1 className="titleList">Resumo financeiro</h1>
+      <div className="divList">
+        <button onClick={() => filtrarTodos()} className="allButton">Todos</button>
+        <button onClick={() => filtrarEntradas()} className="inButton">Entradas</button>
+        <button onClick={() => filtrarDespesas()} className="outButton">Despesas</button>
+      </div>
       </div>
     </>
   );
-}
+};
 
 export default List;

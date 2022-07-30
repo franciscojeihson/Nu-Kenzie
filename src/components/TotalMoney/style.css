@@ -1,46 +1,57 @@
-.total {
+.divTotalMoney{
   display: flex;
-  justify-content: space-around;
-  width: 383px;
-  height: 96px;
-  background: #ffffff;
-  border: 1px solid #e9ecef;
+  justify-content: space-between;
+  width: 250px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border: 1px solid #E9ECEF;
+  box-sizing: border-box;
   border-radius: 4px;
-  margin-top: 16px;
+  padding: 10px;
+  margin-top: 10px;
 }
 
-.total span {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 700;
+.divH1H2{
+  columns: 1;
+}
+
+.titleVlue{
+  font-family: 'Nunito';
   font-size: 16px;
+  font-weight: 700;
   line-height: 30px;
-  color: #fd377e;
-}
-
-.text-total {
-  margin-right: 100px;
-}
-
-.text-total p {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
+  letter-spacing: 0em;
+  text-align: left;
   color: #212529;
 }
 
-.text-total span {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 400;
+.subTitleValue{
+  font-family: 'Nunito';
   font-size: 12px;
+  font-weight: 400;
   line-height: 22px;
-  color: #5b6166;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #868E96;
 }
 
-.total-acc {
+.toralValue{
+  font-family: 'Nunito';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
   display: flex;
-  width: 1435px;
-  justify-content: space-around;
+  color: #FD377E;
+  align-items: center;
+}
+
+@media (min-width:768px) {
+  
+  .divTotalMoney{ 
+  padding: 30px;
+  margin-left: 15%;
+  width: 314px;
+}
+
 }
